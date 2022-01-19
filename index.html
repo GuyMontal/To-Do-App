@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>To-Do App</title>
+    <link href='./styles/styles.css' rel="stylesheet">
+    <link href='./images/favicon.png' rel='icon'>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <h1 class="header__title">To-do List</h1>
+            <h2 class="header__subtitle">Let's get busy, what do you need to do today?</h2>
+        </div>
+    </div>
+    <div class="actions">
+        <div class="actions__container">
+            <input id="search-todo" class='input' type="text" placeholder="Search for your To-Do">
+            <label class="checkbox">
+                <input id="hide-complete" type="checkbox"> Show tasks not yet completed
+            </label>
+        </div>
+    </div>
+
+        <div class="container">
+            <div id="todos"></div>
+            <form id="add-todo">
+                <input type="text" class = 'input' placeholder="Add a new to-do here" name="textTodo">
+                <button class ='button'>Add Todo</button>
+            </form>
+        </div>
+   
+    <script src="https://unpkg.com/uuid@latest/dist/umd/uuidv4.min.js"></script>
+    <script src="./scripts/todo-function.js"></script>
+    <script src="./scripts/todo-app.js"></script>
+</body>
+
+</html>
